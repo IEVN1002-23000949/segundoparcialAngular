@@ -4,10 +4,12 @@ import { Zodiaco } from './Formularios/zodiaco/zodiaco'
 import { FormsModule } from '@angular/forms';
 import { OnInit } from '@angular/core';
 import { initFlowbite } from 'flowbite';
+import { Navbar } from './navbar/navbar'
+import { Usuario } from './Formularios/usuario/usuario'
 
 
 @Component({
-  imports: [RouterOutlet, Zodiaco, FormsModule],
+  imports: [RouterOutlet, Zodiaco, FormsModule, Navbar, Usuario],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
